@@ -1,0 +1,386 @@
+.records-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.records-user-profile {
+  width: 100%;
+  height: 1024px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-end;
+  flex-shrink: 0;
+  border-color: transparent;
+  justify-content: center;
+  background-image: linear-gradient(-66deg, rgba(123, 189, 211, 1) 2%, rgba(240, 243, 186, 1) 100%);
+}
+.records-contents {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  width: auto;
+  bottom: 0px;
+  height: auto;
+  margin: var(--dl-space-space-sixunits);
+  display: flex;
+  position: absolute;
+  max-width: 1800px;
+  min-height: 800px;
+  align-items: center;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 25px;
+  background-size: cover;
+  justify-content: center;
+  background-image: url("/playground_assets/container1722-pj5b-800h.png");
+  background-position: center;
+}
+.records-nav {
+  top: 50px;
+  left: 50px;
+  right: 50px;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: absolute;
+  max-width: 1700px;
+  min-height: 70px;
+  align-items: center;
+  justify-content: center;
+}
+.records-logo {
+  top: 0px;
+  left: 0px;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: absolute;
+  max-width: 1800px;
+  align-self: center;
+  min-height: 70px;
+  align-items: flex-start;
+  border-color: transparent;
+  justify-content: flex-start;
+}
+.records--care-logo {
+  width: 72px;
+  height: 70px;
+  position: relative;
+  border-color: transparent;
+  margin-right: 0px;
+}
+.records-qcarelogo2 {
+  width: 216px;
+  height: 70px;
+  position: relative;
+  border-color: transparent;
+}
+.records-user {
+  top: 0px;
+  right: 0px;
+  width: 500px;
+  height: auto;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  max-width: 500px;
+  align-self: center;
+  box-sizing: border-box;
+  min-height: 70px;
+  text-align: right;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  border-radius: 0px 0px 0px 0px;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+.records-button {
+  width: 200px;
+  height: 70px;
+  font-size: 24px;
+  align-self: center;
+  text-align: center;
+  font-family: Laila;
+  line-height: 2.15;
+  border-radius: 60px;
+  background-color: rgb(133, 215, 205);
+}
+.records-icon {
+  top: 0px;
+  right: 0px;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.records-person {
+  top: 0px;
+  left: 0px;
+  width: 73px;
+  height: 67px;
+  position: absolute;
+  border-color: transparent;
+  border-radius: 70px;
+}
+.records-vector {
+  top: 12px;
+  left: 0px;
+  right: 0px;
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  position: absolute;
+  align-self: center;
+}
+.records-text {
+  top: 0px;
+  color: rgb(0, 0, 0);
+  right: var(--dl-space-space-sixunits);
+  width: 200px;
+  height: 70px;
+  position: absolute;
+  font-size: 32px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: right;
+  font-family: Laila;
+  font-weight: 400;
+  line-height: 2.25;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.records-title {
+  color: rgb(0, 0, 0);
+  width: 500px;
+  height: 80px;
+  font-size: 48px;
+  align-self: flex-start;
+  font-style: Regular;
+  margin-top: 140px;
+  text-align: center;
+  font-family: Laila;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.records-button1 {
+  left: 0px;
+  right: 0px;
+  width: auto;
+  bottom: var(--dl-space-space-fiveunits);
+  height: auto;
+  margin: auto;
+  position: absolute;
+  font-size: 24px;
+  max-width: 300px;
+  align-self: flex-end;
+  font-style: normal;
+  min-height: 80px;
+  text-align: center;
+  font-family: Laila;
+  font-weight: 600;
+  line-height: 3.25;
+  padding-top: 0px;
+  border-radius: 60px;
+  padding-bottom: 0px;
+  text-decoration: underline;
+  background-color: rgb(133, 215, 205);
+}
+@media(max-width: 1600px) {
+  .records-user-profile {
+    align-self: flex-start;
+  }
+}
+@media(max-width: 991px) {
+  .records-nav {
+    min-height: 60px;
+  }
+  .records-logo {
+    min-height: 60px;
+  }
+  .records--care-logo {
+    width: 60px;
+    height: 60px;
+  }
+  .records-qcarelogo2 {
+    width: 180px;
+    height: 60px;
+  }
+  .records-user {
+    width: 300px;
+    min-height: 60px;
+  }
+  .records-button {
+    width: 200px;
+    height: 60px;
+  }
+  .records-icon {
+    width: 65px;
+    height: 60px;
+  }
+  .records-person {
+    width: 65px;
+    height: 60px;
+  }
+  .records-vector {
+    top: 0px;
+    bottom: 0px;
+  }
+  .records-text {
+    right: var(--dl-space-space-fiveunits);
+    height: 60px;
+    font-size: 28px;
+    line-height: 2;
+  }
+}
+@media(max-width: 767px) {
+  .records-contents {
+    margin: var(--dl-space-space-threeunits);
+  }
+  .records-nav {
+    min-height: 60px;
+  }
+  .records-logo {
+    height: 60px;
+    min-height: 60px;
+  }
+  .records--care-logo {
+    width: 60px;
+    height: 60px;
+  }
+  .records-qcarelogo2 {
+    width: 180px;
+    height: 60px;
+  }
+  .records-user {
+    width: 350px;
+    min-height: 60px;
+  }
+  .records-button {
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 200px;
+    height: 60px;
+    margin: auto;
+    position: absolute;
+  }
+  .records-icon {
+    height: 60px;
+  }
+  .records-person {
+    left: 0px;
+    right: 0px;
+    width: 65px;
+    height: 60px;
+    margin: auto;
+  }
+  .records-vector {
+    top: 0px;
+    bottom: 0px;
+  }
+  .records-text {
+    display: none;
+  }
+}
+@media(max-width: 479px) {
+  .records-user-profile {
+    background-image: linear-gradient(-66deg, rgba(123, 189, 211, 1) 2%, rgba(240, 243, 186, 1) 100%);
+  }
+  .records-contents {
+    margin: var(--dl-space-space-threeunits);
+  }
+  .records-nav {
+    top: 30px;
+    left: 0px;
+    right: 0px;
+    width: 350px;
+    height: 130px;
+    margin: auto;
+    min-height: 50px;
+  }
+  .records-logo {
+    right: 0px;
+    bottom: 0px;
+    height: 0px;
+    position: static;
+    align-self: flex-end;
+    min-height: 50px;
+    margin-right: 0px;
+    justify-content: center;
+  }
+  .records--care-logo {
+    width: 50px;
+    height: 50px;
+  }
+  .records-qcarelogo2 {
+    width: 150px;
+    height: 50px;
+  }
+  .records-user {
+    top: 0px;
+    right: 0px;
+    width: 150px;
+    height: 50px;
+    margin: auto;
+    position: absolute;
+    min-height: 50px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .records-button {
+    right: 0px;
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    text-align: center;
+    font-family: Laila;
+    line-height: 2;
+    background-color: rgb(133, 215, 205);
+  }
+  .records-icon {
+    height: 50px;
+    display: none;
+  }
+  .records-person {
+    left: 0px;
+    right: 0px;
+    width: 55px;
+    height: 50px;
+    margin: auto;
+  }
+  .records-vector {
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 30px;
+    bottom: 0px;
+    height: 30px;
+    margin: auto;
+    position: absolute;
+    align-self: center;
+  }
+  .records-title {
+    font-size: 42px;
+    align-self: flex-start;
+    margin-top: 180px;
+    margin-left: var(--dl-space-space-threeunits);
+    margin-right: var(--dl-space-space-threeunits);
+  }
+  .records-button1 {
+    bottom: var(--dl-space-space-threeunits);
+  }
+}

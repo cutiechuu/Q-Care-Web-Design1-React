@@ -5,6 +5,7 @@
   min-height: 100vh;
   align-items: center;
   flex-direction: column;
+  justify-content: center;
 }
 .landing-page-landing-page {
   width: 100%;
@@ -322,6 +323,9 @@
   }
 }
 @media(max-width: 479px) {
+  .landing-page-landing-page {
+    width: 286px;
+  }
   .landing-page-contents {
     margin: var(--dl-space-space-twounits);
     margin-right: TwoUnits;
@@ -350,7 +354,6 @@
   }
   .landing-page-phone-image {
     left: 0px;
-    right: 0px;
     width: 300px;
     bottom: 0px;
     height: 250px;

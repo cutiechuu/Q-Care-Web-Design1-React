@@ -18,70 +18,18 @@ const UserRegistration = (props) => {
       <div className="user-registration-user-reg">
         <div className="user-registration-container1">
           <div className="user-registration-forms">
-            <div className="user-registration-bm-calculator">
-              <span className="user-registration-text">
-                <span>Body Mass Index (BMI) Calculator</span>
-              </span>
-              <span className="user-registration-text2">
-                Please input your height and weight:
-              </span>
-              <div className="user-registration-container2">
-                <input
-                  type="text"
-                  required
-                  placeholder="Enter your height"
-                  className="user-registration-height input"
-                />
-                <input
-                  type="text"
-                  required
-                  placeholder="Enter your weight"
-                  className="user-registration-weight input"
-                />
-                <input
-                  type="text"
-                  required
-                  placeholder="BMI Result"
-                  className="user-registration-result"
-                />
-              </div>
-            </div>
             <form
               action="signup_action.php"
               method="POST"
               className="user-registration-form"
             >
-              <input
-                type="text"
-                placeholder="Email"
-                className="user-registration-email input"
-              />
-              <input
-                type="text"
-                placeholder="Password"
-                className="user-registration-pw input"
-              />
-              <div className="user-registration-full-name">
+              <div className="user-registration-inputs">
                 <input
                   type="text"
                   required
-                  placeholder="First name"
-                  className="user-registration-fn input"
+                  placeholder="Full name"
+                  className="user-registration-fullname input"
                 />
-                <input
-                  type="text"
-                  required
-                  placeholder="Middle name"
-                  className="user-registration-mn input"
-                />
-                <input
-                  type="text"
-                  required
-                  placeholder="Last name"
-                  className="user-registration-ln input"
-                />
-              </div>
-              <div className="user-registration-details">
                 <input
                   type="text"
                   required
@@ -90,53 +38,78 @@ const UserRegistration = (props) => {
                 />
                 <input
                   type="text"
-                  required
                   placeholder="BMI"
                   className="user-registration-bmi input"
                 />
+                <input
+                  type="text"
+                  placeholder="Username"
+                  className="user-registration-username input"
+                />
+                <input
+                  type="text"
+                  placeholder="Email"
+                  className="user-registration-email input"
+                />
+                <input
+                  type="text"
+                  placeholder="Password"
+                  className="user-registration-password input"
+                />
+                <button
+                  type="button"
+                  className="user-registration-register button"
+                >
+                  Register New Account
+                </button>
+                <div className="user-registration-sign-in">
+                  <span className="user-registration-question">
+                    Already have an account?
+                  </span>
+                  <button
+                    type="button"
+                    className="user-registration-sign-in button"
+                  >
+                    <Link
+                      to="/user-login"
+                      className="user-registration-navlink"
+                    >
+                      <span>
+                        Sign
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: ' ',
+                          }}
+                        />
+                      </span>
+                      <span className="user-registration-text1">In here</span>
+                    </Link>
+                  </button>
+                </div>
+                <button
+                  type="submit"
+                  className="user-registration-b-icalq button"
+                >
+                  BMI Calculator
+                </button>
               </div>
-              <span className="user-registration-text3">
+              <span className="user-registration-register-here">
                 <span>Register Here</span>
                 <br></br>
-              </span>
-              <button
-                type="button"
-                className="user-registration-sign-in button"
-              >
-                <Link to="/user-login" className="user-registration-navlink">
-                  <span>
-                    Sign
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
-                  <span className="user-registration-text7">In here</span>
-                </Link>
-              </button>
-              <button
-                type="submit"
-                className="user-registration-register button"
-              >
-                Register New Account
-              </button>
-              <span className="user-registration-text8">
-                Already have an account?
               </span>
             </form>
           </div>
         </div>
         <div className="user-registration-logo">
           <img
-            alt="IMG2023040514131676412944"
-            src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/038b75a3-4ea2-49cc-b6c1-dc88440f981b/def98722-fdb6-44d7-b36d-e1e3595417b3?org_if_sml=18920"
-            className="user-registration-img202304051413167641"
+            alt="qcarelogo22945"
+            src="/playground_assets/qcarelogo22945-wohp-200h.png"
+            className="user-registration-qcarelogo2"
           />
           <img
-            alt="qcarelogo22945"
-            src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/038b75a3-4ea2-49cc-b6c1-dc88440f981b/915ac695-3830-4c79-a235-8ea9e591c615?org_if_sml=15678"
-            className="user-registration-qcarelogo2"
+            alt="pastedImage"
+            src="/playground_assets/pastedimage-wwkt-200h.png"
+            className="user-registration-qcarelogo"
           />
         </div>
       </div>
